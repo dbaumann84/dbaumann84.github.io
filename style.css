@@ -1,0 +1,73 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    background-color: #0074cc;
+    color: #fff;
+    padding: 20px 0;
+    margin: 0;
+}
+
+h2 {
+    background-color: #0074cc;
+    color: #fff;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+p {
+    font-weight: bold;
+}
+
+input[type="button"] {
+    background-color: #0074cc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    background-color: #005aa3;
+}
+
+#contagem {
+    font-weight: bold;
+    font-size: 18px;
+}
+#webcam{
+   width: 100%;
+}

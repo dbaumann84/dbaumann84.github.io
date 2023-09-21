@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulário de Contagem de Passageiros</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+</head>
+
+<body>
+    <h1>Formulário de Contagem de Passageiros</h1>
+    <form id="passageiroForm">
+        <label for="horaInicioPico">Pico inicial:</label>
+        <input type="time" id="horaInicioPico" required><br><br>
+
+        <label for="horaFinalPico">Pico final:</label>
+        <input type="time" id="horaFinalPico" required><br><br>
+
+        <video id="webcam" autoplay playsinline></video>
+
+        <p id="contador">0</p>
+        <p>Inicie a viagem</p>
+
+        <label for="horaAtual">Hora Atual:</label>
+        <input type="time" id="horaAtual" required><br><br>
+
+        <label for="sensorAtivo">O sensor identificou algo?</label>
+        <select id="sensorAtivo" required>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+        </select><br><br>
+
+        <label for="viagemEmAndamento">Viagem em andamento?</label>
+        <select id="viagemEmAndamento" required>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+        </select><br><br>
+
+        <input type="button" value="Registrar Leitura" onclick="registrarLeitura()">
+    </form>
+
+    <h2>Resultado</h2>
+    <p>Número de passageiros no horário de pico: <span id="contagem">0</span></p>
+    <script src="camera.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
